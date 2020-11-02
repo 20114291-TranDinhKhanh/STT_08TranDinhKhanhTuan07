@@ -7,14 +7,14 @@ const Screen02 = ({ route }) => {
   const navigation = useNavigation();
   const dataParam = route.params;
   const [data, setData] = useState([]);
-  useEffect(() => {
-    fetch("https://65419dfcf0b8287df1fe8be4.mockapi.io/donut")
-      .then((response) => response.json())
-      .then((json) => {
-        console.log(json);
-        setData(json);
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch("https://65419dfcf0b8287df1fe8be4.mockapi.io/donut")
+  //     .then((response) => response.json())
+  //     .then((json) => {
+  //       console.log(json);
+  //       setData(json);
+  //     });
+  // }, []);
 
   return (
     //   <View>
@@ -28,7 +28,7 @@ const Screen02 = ({ route }) => {
           navigation.navigate("Screen01");
         }}
       >
-        <Text style={{ borderWidth: 1, borderRadius: 5, width: 300 }}>
+        <Text style={{ borderWidth: 1, borderRadius: 5, width: 300}}>
           Back
         </Text>
       </Pressable>
