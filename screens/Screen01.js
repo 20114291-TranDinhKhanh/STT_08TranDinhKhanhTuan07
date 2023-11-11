@@ -12,7 +12,7 @@ const Screen01 = ({ route }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("https://65419dfcf0b8287df1fe8be4.mockapi.io/donut")
+    fetch("https://65419dfcf0b8287df1fe8be4.mockapi.io/keyboard")
       .then((response) => response.json())
       .then((json) => {
         console.log(json);
@@ -108,6 +108,9 @@ const Screen01 = ({ route }) => {
                 {item.name}
               </Text>
             </Pressable>
+            {/*  */}
+
+            {/*  */}
 
             <Text
               style={{ fontWeight: 700, fontSize: 20, top: 60, right: 360 }}
